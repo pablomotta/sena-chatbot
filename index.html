@@ -83,18 +83,15 @@
 				console.log(pathItems);
 				var language = '';
 				// check for fr, de, es and it cases - en is default
-				switch (pathItems[1]) {
+				switch (pathItems[2]) {
 					case 'fr':
 						return (language = 'fr');
 					case 'de':
 						return (language = 'de');
-					/********************************************************************************
-					 *  Uncomment next four lines when ready to launch Spanish and Italian languages.
-					 ********************************************************************************/
-					//case 'es':
-					//  return (language = 'es');
-					//case 'it':
-					//  return (language = 'it');
+					case 'es':
+						return (language = 'es');
+					case 'it':
+						return (language = 'it');
 					default:
 						return (language = 'en');
 				}
