@@ -11,5 +11,58 @@
 		/>
 		<title>Sena Chatbot Test</title>
 	</head>
-	<body></body>
+	<style>
+		.navbar {
+			background-color: #b32d26 !important;
+		}
+		.navbar > a {
+			color: white !important;
+		}
+		.buttons-container,
+		.buttons {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+		.buttons-container {
+			justify-content: space-around;
+			flex-wrap: wrap;
+		}
+		.btn-md {
+			min-width: 6rem !important;
+		}
+	</style>
+	<body>
+		<nav
+			class="navbar navbar-light bg-light d-flex justify-content-center mb-5"
+		>
+			<a class="navbar-brand" href="#"><b>Sena Chatbot Test</b> </a>
+		</nav>
+		<div class="container">
+			<div class="row justify-content-md-center mb-4">
+				<div class="col-md-auto text-center">
+					<h1>English</h1>
+				</div>
+			</div>
+			<div class="buttons">
+				<div class="buttons-container">
+					<a href="/index.html" class="btn btn-warning btn-md m-2"
+						>English</a
+					>
+					<a href="/fr.html" class="btn btn-warning btn-md m-2"
+						>French</a
+					>
+					<a href="/de.html" class="btn btn-warning btn-md m-2"
+						>German</a
+					>
+					<a href="/it.html" class="btn btn-warning btn-md m-2"
+						>Italian</a
+					>
+					<a href="/es.html" class="btn btn-warning btn-md m-2"
+						>Spanish</a
+					>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
