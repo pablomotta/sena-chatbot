@@ -16,68 +16,6 @@
 			crossorigin="anonymous"
 		/>
 		<title>Sena Chatbot Test</title>
-	</head>
-	<style>
-		.navbar {
-			background-color: #b32d26 !important;
-		}
-		.navbar > a {
-			color: white !important;
-		}
-		.buttons-container,
-		.buttons {
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-		}
-		.buttons-container {
-			justify-content: space-around;
-			flex-wrap: wrap;
-		}
-		.btn-md {
-			min-width: 6rem !important;
-		}
-	</style>
-	<body>
-		<nav
-			class="navbar navbar-light bg-light d-flex justify-content-center mb-5"
-		>
-			<a class="navbar-brand" href="#"><b>Sena Chatbot Test</b> </a>
-		</nav>
-		<div class="container">
-			<div class="row justify-content-md-center mb-4">
-				<div class="col-md-auto text-center">
-					<h1>Italian</h1>
-				</div>
-			</div>
-			<div class="buttons">
-				<div class="buttons-container">
-					<a href="/sena-chatbot/" class="btn btn-warning btn-md m-2"
-						>English</a
-					>
-					<a
-						href="/sena-chatbot/fr"
-						class="btn btn-warning btn-md m-2"
-						>French</a
-					>
-					<a
-						href="/sena-chatbot/de"
-						class="btn btn-warning btn-md m-2"
-						>German</a
-					>
-					<a
-						href="/sena-chatbot/it"
-						class="btn btn-warning btn-md m-2"
-						>Italian</a
-					>
-					<a
-						href="/sena-chatbot/es"
-						class="btn btn-warning btn-md m-2"
-						>Spanish</a
-					>
-				</div>
-			</div>
-		</div>
 		<script>
 			// check for the url pathname
 			var urlPath = window.location.pathname;
@@ -136,6 +74,91 @@
 			} else {
 				BCinitiateCall();
 			}
+
+			function openEn() {
+				window.open('https://pablomotta.github.io/sena-chatbot/');
+			}
+			function openDe() {
+				window.open('https://pablomotta.github.io/sena-chatbot/de');
+			}
+			function openFr() {
+				window.open('https://pablomotta.github.io/sena-chatbot/fr');
+			}
+			function openEs() {
+				window.open('https://pablomotta.github.io/sena-chatbot/es');
+			}
+			function openIt() {
+				window.open('https://pablomotta.github.io/sena-chatbot/it');
+			}
 		</script>
+	</head>
+	<style>
+		.navbar {
+			background-color: #b32d26 !important;
+		}
+		.navbar > a {
+			color: white !important;
+		}
+		.buttons-container,
+		.buttons {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+		.buttons-container {
+			justify-content: space-around;
+			flex-wrap: wrap;
+		}
+		.btn-md {
+			min-width: 6rem !important;
+		}
+	</style>
+	<body>
+		<nav
+			class="navbar navbar-light bg-light d-flex justify-content-center mb-5"
+		>
+			<a class="navbar-brand" href="#"><b>Sena Chatbot Test</b> </a>
+		</nav>
+		<div class="container">
+			<div class="row justify-content-md-center mb-4">
+				<div class="col-md-auto text-center">
+					<h1>French</h1>
+				</div>
+			</div>
+			<div class="buttons">
+				<div class="buttons-container">
+					<a
+						href="https://pablomotta.github.io/sena-chatbot/"
+						class="btn btn-warning btn-md m-2"
+						onclick="openEn"
+						>English</a
+					>
+					<a
+						href="https://pablomotta.github.io/sena-chatbot/fr"
+						class="btn btn-warning btn-md m-2"
+						onclick="openFr"
+						>French</a
+					>
+					<a
+						href="https://pablomotta.github.io/sena-chatbot/de"
+						class="btn btn-warning btn-md m-2"
+						onclick="openDe"
+						>German</a
+					>
+					<a
+						href="https://pablomotta.github.io/sena-chatbot/it"
+						class="btn btn-warning btn-md m-2"
+						onclick="openIt"
+						>Italian</a
+					>
+					<a
+						href="https://pablomotta.github.io/sena-chatbot/es"
+						class="btn btn-warning btn-md m-2"
+						onclick="openEs"
+						>Spanish</a
+					>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
