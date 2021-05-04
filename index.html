@@ -42,6 +42,7 @@
 			// store site language into variable
 			const siteLanguage = detectLanguage(urlPath);
 			console.log('site language = ', siteLanguage);
+			console.log(typeof siteLanguage);
 
 			window.botmindWidget = null;
 			function initBotmindChat() {
@@ -76,16 +77,10 @@
 			}
 
 			function openEn() {
-				window.open(
-					'https://pablomotta.github.io/sena-chatbot/',
-					'_top'
-				);
+				window.open('https://pablomotta.github.io/sena-chatbot/');
 			}
 			function openDe() {
-				window.open(
-					'https://pablomotta.github.io/sena-chatbot/de',
-					'_top'
-				);
+				window.open('https://pablomotta.github.io/sena-chatbot/de');
 			}
 			function openFr() {
 				window.open('https://pablomotta.github.io/sena-chatbot/fr');
@@ -128,13 +123,13 @@
 		<div class="container">
 			<div class="row justify-content-md-center mb-4">
 				<div class="col-md-auto text-center">
-					<h1>French</h1>
+					<h1>English</h1>
 				</div>
 			</div>
 			<div class="buttons">
 				<div class="buttons-container">
 					<a
-						href=""
+						href="https://pablomotta.github.io/sena-chatbot"
 						class="btn btn-warning btn-md m-2"
 						onclick="openEn(); return false;"
 						>English</a
