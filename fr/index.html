@@ -76,10 +76,16 @@
 			}
 
 			function openEn() {
-				window.open('https://pablomotta.github.io/sena-chatbot/');
+				window.open(
+					'https://pablomotta.github.io/sena-chatbot/',
+					'_top'
+				);
 			}
 			function openDe() {
-				window.open('https://pablomotta.github.io/sena-chatbot/de');
+				window.open(
+					'https://pablomotta.github.io/sena-chatbot/de',
+					'_top'
+				);
 			}
 			function openFr() {
 				window.open('https://pablomotta.github.io/sena-chatbot/fr');
@@ -128,33 +134,33 @@
 			<div class="buttons">
 				<div class="buttons-container">
 					<a
-						href="https://pablomotta.github.io/sena-chatbot/"
+						href=""
 						class="btn btn-warning btn-md m-2"
-						onclick="openEn"
+						onclick="openEn(); return false;"
 						>English</a
 					>
 					<a
 						href="https://pablomotta.github.io/sena-chatbot/fr"
 						class="btn btn-warning btn-md m-2"
-						onclick="openFr"
+						onclick="openFr(); return false;"
 						>French</a
 					>
 					<a
 						href="https://pablomotta.github.io/sena-chatbot/de"
 						class="btn btn-warning btn-md m-2"
-						onclick="openDe"
+						onclick="openDe(); return false;"
 						>German</a
 					>
 					<a
 						href="https://pablomotta.github.io/sena-chatbot/it"
 						class="btn btn-warning btn-md m-2"
-						onclick="openIt"
+						onclick="openIt(); return false;"
 						>Italian</a
 					>
 					<a
 						href="https://pablomotta.github.io/sena-chatbot/es"
 						class="btn btn-warning btn-md m-2"
-						onclick="openEs"
+						onclick="openEs(); return false"
 						>Spanish</a
 					>
 				</div>
