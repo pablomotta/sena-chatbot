@@ -75,20 +75,8 @@
 				BCinitiateCall();
 			}
 
-			function openEn() {
-				window.open('https://pablomotta.github.io/sena-chatbot/');
-			}
-			function openDe() {
-				window.open('https://pablomotta.github.io/sena-chatbot/de');
-			}
-			function openFr() {
-				window.open('https://pablomotta.github.io/sena-chatbot/fr');
-			}
-			function openEs() {
-				window.open('https://pablomotta.github.io/sena-chatbot/es');
-			}
-			function openIt() {
-				window.open('https://pablomotta.github.io/sena-chatbot/it');
+			function refreshLocalStorage() {
+				localStorage.removeItem('bc-sid');
 			}
 		</script>
 	</head>
@@ -130,33 +118,33 @@
 					<a
 						href="https://pablomotta.github.io/sena-chatbot"
 						class="btn btn-warning btn-md m-2"
+						onclick="refreshLocalStorage();"
 						>English</a
 					>
-					<!-- 	onclick="openEn(); return false;" -->
 					<a
 						href="https://pablomotta.github.io/sena-chatbot/fr"
 						class="btn btn-warning btn-md m-2"
+						onclick="refreshLocalStorage();"
 						>French</a
 					>
-					<!-- onclick="openFr(); return false;" -->
 					<a
 						href="https://pablomotta.github.io/sena-chatbot/de"
 						class="btn btn-warning btn-md m-2"
+						onclick="refreshLocalStorage();"
 						>German</a
 					>
-					<!-- 	onclick="openDe(); return false;" -->
 					<a
 						href="https://pablomotta.github.io/sena-chatbot/it"
 						class="btn btn-warning btn-md m-2"
+						onclick="refreshLocalStorage();"
 						>Italian</a
 					>
-					<!-- onclick="openIt(); return false;" -->
 					<a
 						href="https://pablomotta.github.io/sena-chatbot/es"
 						class="btn btn-warning btn-md m-2"
+						onclick="refreshLocalStorage();"
 						>Spanish</a
 					>
-					<!-- onclick="openEs(); return false" -->
 				</div>
 			</div>
 		</div>
