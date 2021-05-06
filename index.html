@@ -17,6 +17,10 @@
 		/>
 		<title>Sena Chatbot Test</title>
 		<script>
+			// check for clear local storage
+			if (!localStorage.getItem('bc-sid')) {
+				console.log('Sena chat refreshed');
+			}
 			// check for the url pathname
 			var urlPath = window.location.pathname;
 			console.log(urlPath);
@@ -77,7 +81,6 @@
 
 			function refreshLocalStorage() {
 				localStorage.removeItem('bc-sid');
-				console.log('Sena chat refreshed.');
 			}
 		</script>
 	</head>
