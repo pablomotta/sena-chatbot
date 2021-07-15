@@ -22,6 +22,13 @@
 			$.getJSON(
 				'https://json.geoiplookup.io/?callback=?',
 				function (data) {
+					$('#location').append(`
+					<p>
+						<b>City:</b> ${data.city}, <b>State:</b> ${data.region},
+						<b>Zip Code:</b> ${data.postal_code},
+						<b>Country:</b> ${data.country_name}
+					</p>
+				`);
 					console.log(JSON.stringify(data, null, 2));
 				}
 			);
@@ -167,6 +174,13 @@
 					>
 				</div>
 			</div>
+			<!-- new -->
+			<hr class="mt-5" />
+			<div class="text-center mt-5">
+				<h2 class="mb-5">Current Location</h2>
+				<div id="location"></div>
+			</div>
+			<!-- new -->
 		</div>
 	</body>
 </html>
