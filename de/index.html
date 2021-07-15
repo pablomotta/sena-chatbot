@@ -16,6 +16,16 @@
 			crossorigin="anonymous"
 		/>
 		<title>Sena Chatbot Test</title>
+		<!-- IP Location -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script>
+			$.getJSON(
+				'https://json.geoiplookup.io/?callback=?',
+				function (data) {
+					console.log(JSON.stringify(data, null, 2));
+				}
+			);
+		</script>
 		<script>
 			// check for clear local storage
 			if (!localStorage.getItem('bc-sid')) {
@@ -107,7 +117,13 @@
 	</style>
 	<body>
 		<nav
-			class="navbar navbar-light bg-light d-flex justify-content-center mb-5"
+			class="
+				navbar navbar-light
+				bg-light
+				d-flex
+				justify-content-center
+				mb-5
+			"
 		>
 			<a class="navbar-brand" href="#"><b>Sena Chatbot Test</b> </a>
 		</nav>
