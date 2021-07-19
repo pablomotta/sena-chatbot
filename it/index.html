@@ -30,11 +30,7 @@
 					</p>
 				`);
 					console.log(JSON.stringify(data, null, 2));
-				}
-			);
-		</script>
-		<script>
-			// check for clear local storage
+					// check for clear local storage
 			if (!localStorage.getItem('bc-sid')) {
 				console.log('Sena chat refreshed');
 			}
@@ -71,6 +67,17 @@
 						token: 'd04f06fc-bb83-45d8-9b39-4b5443ab4bd9',
 						host: 'https://api.widget.botmind.io',
 						language: siteLanguage, // insert variable into chatbot initializer
+					},{
+						customData: [
+							{
+								key: 'user_country',
+								value: data.country_code
+							}, 
+							{
+								key:'user_coordinates',
+								value: `${data.latitude}, ${data.longitude}`
+							}
+						]
 					});
 				}
 			}
@@ -95,7 +102,10 @@
 			} else {
 				BCinitiateCall();
 			}
-
+				}
+			);
+		</script>
+		<script>
 			function refreshLocalStorage() {
 				localStorage.removeItem('bc-sid');
 			}
