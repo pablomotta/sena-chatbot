@@ -1,0 +1,19 @@
+.navbar {
+	background-color: #b32d26 !important;
+}
+.navbar > a {
+	color: white !important;
+}
+.buttons-container,
+.buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.buttons-container {
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.btn-md {
+	min-width: 6rem !important;
+}
