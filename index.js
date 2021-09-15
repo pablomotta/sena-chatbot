@@ -92,3 +92,7 @@ $.getJSON('https://json.geoiplookup.io/?callback=?', function (data) {
 		BCinitiateCall();
 	}
 });
+
+function setAllConsentCookies() {
+	botmindWidget.consentCollected();
+}
